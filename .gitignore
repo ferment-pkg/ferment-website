@@ -18,7 +18,6 @@
 # misc
 .DS_Store
 *.pem
-ferment
 ferment.tar.gz
 
 # debug

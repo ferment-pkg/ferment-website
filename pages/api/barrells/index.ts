@@ -26,10 +26,10 @@ export default async function handler(
       finished = true;
     });
   } else {
-    const c = child.exec("git pull");
-    c.on("exit", () => {
-      finished = true;
-    });
+    // const c = child.exec("cd ferment && git pull");
+    // c.on("exit", () => {
+    //   finished = true;
+    // });
   }
   while (!finished) {
     await new Promise((resolve) => setTimeout(resolve, 100));
