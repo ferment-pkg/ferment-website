@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@types/node-fetch": "^2.6.1",
+    "@types/tar-fs": "^2.0.1",
     "autoprefixer": "^10.4.7",
     "next": "12.1.6",
+    "node-fetch": "^3.2.4",
     "postcss": "^8.4.13",
     "react": "18.1.0",
     "react-dom": "18.1.0",

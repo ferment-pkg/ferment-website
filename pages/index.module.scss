@@ -1,3 +1,18 @@
-.download{
-    font-family:"Radio Canada", sans-serif;
+.tooltip{
+    //horiztonally centered
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 40px;
+    min-width: 100px;
+    filter: brightness(0.8);
+    content: "copied";
+    transition: all 1s ease;
+
+}
+span.tooltip{
+    margin-top:-35px;
+    text-align: center;
+        transition: all 1s ease;
 }
