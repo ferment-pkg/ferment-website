@@ -70,7 +70,7 @@ export async function getServerSideProps({
   query: any;
 }) {
   const res = await (
-    await fetch(`http://${req.headers.host}/api/barrells/${query.name}`)
+    await fetch(`https://${req.headers.host}/api/barrells/${query.name}`)
   ).json();
   return {
     props: {

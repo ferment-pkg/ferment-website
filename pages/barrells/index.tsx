@@ -41,7 +41,7 @@ export default function Barrells({ barrels }: { barrels: any[] }) {
   );
 }
 export async function getServerSideProps() {
-  const res = await (await fetch("http://localhost:3000/api/barrells")).json();
+  const res = await (await fetch("https://ferment.tk/api/barrells")).json();
   return {
     props: {
       barrels: res,
