@@ -23,7 +23,7 @@ const Head = () => {
       <meta property="og:color" content="#413FE0" />
       <meta property="og:url" content="https://ferment.tk/" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="icon" href="/logo.svg" />
+      <link rel="shortcut icon" href="/logo.svg" />
     </NextHead>
   );
 };
