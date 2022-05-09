@@ -54,9 +54,9 @@ const Home: NextPage = () => {
           called brew while being much faster.
         </h1>
         <h1 className="font-bold text-2xl m-5">Resources:</h1>
-        {/* <h1 className="font-bold text-xl m-5">
+        <h1 className="font-bold text-xl m-5">
           <Link href="/barrells">Browse All Barrells</Link>
-        </h1> */}
+        </h1>
         <h1 className="font-bold text-xl m-5">
           <Link href="https://github.com/ferment-pkg/ferment/blob/main/README.md">
             Documentation
