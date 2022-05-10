@@ -25,8 +25,10 @@ if [ "$isGitInstalled" = "" ]; then
   fi
 fi
 echo "Cloning The Package Manager..."
+mkdir -p /usr/local/Ferment
+chmod -R 777 /usr/local/Ferment
 git clone https://github.com/ferment-pkg/ferment /usr/local/ferment/
 echo "Running Installation Script..."
-chdir /usr/local/ferment/
+cd /usr/local/ferment/
 sh install.sh
 source ~/.zshrc
