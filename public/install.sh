@@ -6,7 +6,6 @@ if [ "$fermentPATH" != "" ]; then
 fi
 echo "This Script Uses sudo Do You Want to Continue? (y/n)"
 read -n 1 -s answer
-
 if [ "$answer" != "y" ]; then
   echo "Exiting"
   exit 1
