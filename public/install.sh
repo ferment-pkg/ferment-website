@@ -6,8 +6,7 @@ then
   exit 1
 fi
 # get response
-read -p "This Script Uses sudo Do You Want to Continue? (y/n)" -n 1 -s -r response
-echo
+read -p "This Script Uses sudo Do You Want to Continue? (y/n)" -n 1 -s -r response && echo
 if [ "$response" != "y" ]
 then
   echo "Exiting"
