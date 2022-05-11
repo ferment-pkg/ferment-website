@@ -6,7 +6,7 @@ then
   exit 1
 fi
 echo "This Script Uses sudo Do You Want to Continue? (y/n)"
-while read -r -s -n 1 REPLY 
+read -r -s -n 1 
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
