@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 fermentPATH=$(which ferment)
 isXcodeCLIInstalled=$(xcode-select -p)
 if [ "$fermentPATH" != "" ]
