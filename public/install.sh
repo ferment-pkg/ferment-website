@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -u
 fermentPATH=$(which ferment)
 isXcodeCLIInstalled=$(xcode-select -p)
 function run(){
@@ -55,6 +56,5 @@ function run(){
   cd /usr/local/ferment/
   sh install.sh
   echo "ferment is installed, please restart your terminal or run source ~/.zshrc"
-  exit 0
 }
 run
