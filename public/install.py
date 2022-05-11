@@ -1,5 +1,6 @@
 import os
 import subprocess
+from time import sleep
 import requests
 import sys
 os.chdir("/tmp")
@@ -10,4 +11,5 @@ with open("install.sh", "wb") as f:
     f.write(content)
     f.close()
 #run install.sh
+sleep(1)
 subprocess.call(["sh", "./install.sh"], stdin=sys.stdin)
