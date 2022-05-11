@@ -1,18 +1,21 @@
 isGitInstalled=$(which git)
 fermentPATH=$(which ferment)
-if [ "$fermentPATH" != "" ]; then
+if [ "$fermentPATH" != "" ]
+then
   echo "ferment is already installed"
-  exit 0
+  exit 1
 fi
 # get response
 read -p "This Script Uses sudo Do You Want to Continue? (y/n)" -n 1 -s -r response
 echo
-if [ "$response" != "y" ];then
+if [ "$response" != "y" ]
+then
   echo "Exiting"
   exit 1
 fi
 echo "Installing ferment"
-if [ "$isGitInstalled" = "" ]; then
+if [ "$isGitInstalled" = "" ]
+then
   echo "Git is not installed, would you like to install git and the xcode comamnd line?"
   #Get response
   read -p "Install git and xcode? (y/n) " -n 1 -r
@@ -22,7 +25,8 @@ if [ "$isGitInstalled" = "" ]; then
         echo "Installing git and xcode"
         xcode-select --install
         git=$(which git)
-        if [ "$git" != "" ]; then
+        if [ "$git" != "" ]
+        then
           echo "Git is installed"
         else
           echo "Git is not installed"
@@ -37,7 +41,8 @@ sudo mkdir -p /usr/local/ferment
 sudo chmod -R 777 /usr/local/ferment
 git clone https://github.com/ferment-pkg/ferment /usr/local/ferment/
 #check is zshrc is installed
-if test -f "$HOME/.zshrc"; then
+if test -f "$HOME/.zshrc"
+then
   echo "Zshrc is already made, skipping"
 else
   echo "Zshrc is not created, creating now..."
