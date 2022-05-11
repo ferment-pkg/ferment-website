@@ -7,36 +7,19 @@ function run(){
     echo "ferment is already installed"
     exit 1
   fi
-  read -p "This Script Uses sudo Do You Want to Continue? (y/n)" -s -n 1
-  echo
-  if [[ $REPLY =~ ^[Yy]$ ]]
-  then
-    break
-  else
-    echo "Exiting"
-    exit 1
-  fi
   echo "Installing ferment"
   if [ "$isXcodeCLIInstalled" = "" ]
   then
-    echo "xcode comamnd line is not installed, would you like to install git and the xcode comamnd line?"
-    #Get response
-    read -p "Install git and xcode cli? (y/n) "  -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
+    echo "xcode comamnd line is not installed..."
+    echo "Installing git and xcode"
+    xcode-select --install
+    git=$(which git)
+    if [ "$git" != "" ]
     then
-          echo "Installing git and xcode"
-          xcode-select --install
-          git=$(which git)
-          if [ "$git" != "" ]
-          then
-            echo "Git is installed"
-          else
-            echo "Git is not installed"
-            exit 1
-          fi
+      echo "Git is installed"
     else
-          echo "Git and xcode will not be installed"
+      echo "Git is not installed"
+      exit 1
     fi
   fi
   echo "Cloning The Package Manager..."
