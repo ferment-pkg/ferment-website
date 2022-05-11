@@ -6,7 +6,7 @@ then
   exit 1
 fi
 echo "This Script Uses sudo Do You Want to Continue? (y/n)"
-read -r -s -n 1 
+read -r -s 
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -20,7 +20,7 @@ if [ "$isXcodeCLIInstalled" = "" ]
 then
   echo "xcode comamnd line is not installed, would you like to install git and the xcode comamnd line?"
   #Get response
-  read -p "Install git and xcode cli? (y/n) " -n 1 -r
+  read -p "Install git and xcode cli? (y/n) "  -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
