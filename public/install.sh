@@ -1,3 +1,4 @@
+#!/bin/sh
 fermentPATH=$(which ferment)
 isXcodeCLIInstalled=$(xcode-select -p)
 if [ "$fermentPATH" != "" ]
@@ -5,8 +6,7 @@ then
   echo "ferment is already installed"
   exit 1
 fi
-read -p "This Script Uses sudo Do You Want to Continue? (y/n)"
-
+read -p "This Script Uses sudo Do You Want to Continue? (y/n)" -s -n 1
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
