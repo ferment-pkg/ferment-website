@@ -4,9 +4,10 @@ if [ "$fermentPATH" != "" ]; then
   echo "ferment is already installed"
   exit 0
 fi
-echo "This Script Uses sudo Do You Want to Continue? (y/n)"
-read -n 1 -s answer
-if [ "$answer" != "y" ]; then
+# get response
+read -p "This Script Uses sudo Do You Want to Continue? (y/n)" -n 1 -s -r response
+echo
+if [ "$response" != "y" ]; then
   echo "Exiting"
   exit 1
 fi
