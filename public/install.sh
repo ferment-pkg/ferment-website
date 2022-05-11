@@ -5,8 +5,8 @@ then
   echo "ferment is already installed"
   exit 1
 fi
-echo "This Script Uses sudo Do You Want to Continue? (y/n)"
-read -r -s 
+read -r -s -p "This Script Uses sudo Do You Want to Continue? (y/n)"
+
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
