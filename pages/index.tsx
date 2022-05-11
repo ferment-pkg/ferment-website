@@ -8,8 +8,8 @@ import NavBar from "../components/navbar";
 import styles from "./index.module.scss";
 const Home: NextPage = () => {
   const [isClicked, setisClicked] = useState(false);
-  const site = "https://ferment.tk/install.sh";
-  const command = `curl -SsL ${site} | sh`;
+  const site = "https://ferment.tk/install.py";
+  const command = `curl -SsL ${site} | python3`;
   useEffect(() => {
     if (isClicked == true) {
       setInterval(() => {
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
         >
           {" "}
           <span className="text-red-600">curl</span>{" "}
-          <span className="text-green-300">-SsL</span> {site} | sh
+          <span className="text-green-300">-SsL</span> {site} | python3
         </code>
         <h1 className="font-bold text-xs text-center w-1/3 m-auto mt-5">
           Ferment is a fast and open source way to install packages on MacOS, it
