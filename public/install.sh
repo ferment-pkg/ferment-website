@@ -1,3 +1,4 @@
+#!/bin/bash
 isGitInstalled=$(which git)
 fermentPATH=$(which ferment)
 if [ "$fermentPATH" != "" ]
@@ -5,9 +6,10 @@ then
   echo "ferment is already installed"
   exit 1
 fi
-# get response
-read -p "This Script Uses sudo Do You Want to Continue? (y/n)" -n 1 -s -r response && echo
-if [ "$response" != "y" ]
+read -p "This Script Uses sudo Do You Want to Continue? (y/n) " -s -n 1 -r REPLY && echo
+
+echo "e"
+if [[ $REPLY !=~ ^[Yy]$ ]]
 then
   echo "Exiting"
   exit 1
@@ -17,8 +19,7 @@ if [ "$isGitInstalled" = "" ]
 then
   echo "Git is not installed, would you like to install git and the xcode comamnd line?"
   #Get response
-  read -p "Install git and xcode? (y/n) " -n 1 -r
-  echo    # (optional) move to a new line
+  read -p "Install git and xcode? (y/n) " -n 1 -r && echo
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
         echo "Installing git and xcode"
