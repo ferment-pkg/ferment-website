@@ -1,13 +1,14 @@
-set -u
 fermentPATH=$(which ferment)
 isXcodeCLIInstalled=$(xcode-select -p)
 read -p "This Script Requires Sudo, Continue? (y/n)" -r -n 1 -s </dev/tty || {
   REPLY="y"
 }
-echo 
-if [ REPLY != "y" ]
+
+# exit if reply is n/N
+echo
+if [[ $REPLY =~ ^[Nn]$ ]]
 then
-  echo "Exiting"
+  echo "Exiting..."
   exit 1
 fi
 
