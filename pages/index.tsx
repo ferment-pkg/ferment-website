@@ -58,6 +58,9 @@ const Home: NextPage = () => {
           <Link href="/barrells">Browse All Barrells</Link>
         </h1>
         <h1 className="font-bold text-xl m-5">
+          <Link href="/create">Make Your Own - Beta</Link>
+        </h1>
+        <h1 className="font-bold text-xl m-5">
           <Link href="https://github.com/ferment-pkg/ferment/blob/main/README.md">
             Documentation
           </Link>
