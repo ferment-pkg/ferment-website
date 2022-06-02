@@ -36,7 +36,7 @@ function run(){
   fi
   echo "Cloning The Package Manager..."
   sudo mkdir -p /usr/local/ferment
-  sudo chown $USER:$USER /usr/local/ferment
+  sudo chgrp admin /usr/local/ferment
   sudo chmod -R 2775 /usr/local/ferment
   git clone https://github.com/ferment-pkg/ferment /usr/local/ferment/
   #check is zshrc is installed
