@@ -36,6 +36,7 @@ function run(){
   fi
   echo "Cloning The Package Manager..."
   sudo mkdir -p /usr/local/ferment
+  sudo dscl . -create /groups/ferment
   sudo dseditgroup -o edit -a $USER user ferment
   sudo chgrp -R ferment /usr/local/ferment
   sudo chmod -R 2775 /usr/local/ferment
