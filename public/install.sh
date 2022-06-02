@@ -36,11 +36,10 @@ function run(){
   fi
   echo "Cloning The Package Manager..."
   sudo mkdir -p /usr/local/ferment
-  sudo groupadd ferment
+  sudo dseditgroup -o edit -a $USER user ferment
   sudo chgrp -R ferment /usr/local/ferment
   sudo chmod -R 2775 /usr/local/ferment
   git clone https://github.com/ferment-pkg/ferment /usr/local/ferment/
-  sudo useradd -G ferment $USER
   #check is zshrc is installed
   if test -f "$HOME/.zshrc"
   then
