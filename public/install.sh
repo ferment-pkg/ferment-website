@@ -37,9 +37,9 @@ function run(){
   echo "Cloning The Package Manager..."
   sudo mkdir /usr/local/bin
   sudo mkdir -p /usr/local/ferment
-  sudo chgrp staff /usr/local/ferment
-  sudo chgrp staff /usr/local/bin
   sudo chmod -R 2775 /usr/local/ferment
+  sudo chmod -R $USER:admin /usr/local/ferment
+  sudo chmod -R $USER:admin /usr/local/bin
   git clone  --recurse-submodules -j8 https://github.com/ferment-pkg/ferment /usr/local/ferment/
   #check is zshrc is installed
   if test -f "$HOME/.zshrc"
