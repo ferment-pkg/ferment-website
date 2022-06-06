@@ -40,7 +40,7 @@ function run(){
   sudo chgrp staff /usr/local/ferment
   sudo chgrp staff /usr/local/bin
   sudo chmod -R 2775 /usr/local/ferment
-  git clone --recurse-submodules -j8 https://github.com/ferment-pkg/ferment /usr/local/ferment/
+  git clone  --recurse-submodules -j8 https://github.com/ferment-pkg/ferment /usr/local/ferment/
   #check is zshrc is installed
   if test -f "$HOME/.zshrc"
   then
@@ -54,4 +54,15 @@ function run(){
   sh install.sh
   echo "ferment is installed, please restart your terminal or run source ~/.zshrc"
 }
+have_sudo_access() {
+prompt=$(sudo -nv 2>&1)
+if [ $? -eq 0 ]; then
+  # exit code of sudo-command is 0
+  echo 
+else
+  echo "Sudo permissions needed on user before installation"
+  exit 1
+fi
+}
+have_sudo_access
 run
