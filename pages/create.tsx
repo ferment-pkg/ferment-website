@@ -278,7 +278,7 @@ function validateUrl(value: string) {
 }
 
 const template = `# Created With Barrell Tool https://ferment.tk/create
-from index import Barells
+from index import Barrells
 class {{name}}(Barrells):
     def __init__(self):
         self.description = "{{description}}"
