@@ -1,7 +1,7 @@
-import Navbar from "../../components/navbar";
-import Head from "../../components/head";
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+import Head from "../../components/head";
+import Navbar from "../../components/navbar";
 export default function Barrells({ barrels }: { barrels: any[] }) {
   const [barrellsFilter, setBarrells] = useState(barrels);
   return (
@@ -41,7 +41,9 @@ export default function Barrells({ barrels }: { barrels: any[] }) {
   );
 }
 export async function getServerSideProps() {
-  const res = await (await fetch("https://api.ferment.tk/barrells")).json();
+  const res = await (
+    await fetch("https://api.fermentpkg.tech/barrells")
+  ).json();
   return {
     props: {
       barrels: res,

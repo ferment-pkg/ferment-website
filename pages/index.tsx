@@ -8,7 +8,7 @@ import NavBar from "../components/navbar";
 import styles from "./index.module.scss";
 const Home: NextPage = () => {
   const [isClicked, setisClicked] = useState(false);
-  const site = "https://ferment.tk/install.sh";
+  const site = "https://fermentpkg.tech/install.sh";
   const command = `curl -SsL ${site} | sh`;
   useEffect(() => {
     if (isClicked == true) {

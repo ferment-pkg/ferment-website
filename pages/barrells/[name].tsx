@@ -70,7 +70,7 @@ export async function getServerSideProps({
   query: any;
 }) {
   const res = await (
-    await fetch(`https://api.ferment.tk/barrells/${query.name}`)
+    await fetch(`https://api.fermentpkg.tech/barrells/${query.name}`)
   ).json();
   return {
     props: {

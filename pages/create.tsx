@@ -36,7 +36,7 @@ export default function CreatePage() {
         { name: "src", type: "string" },
       ],
       cmd: `
-import os 
+import os
 os.symlink("{{dest}}", "{{src}}")`,
       description: "Symlink a file or directory",
       multiple: true,
@@ -277,7 +277,7 @@ function validateUrl(value: string) {
   );
 }
 
-const template = `# Created With Barrell Tool https://ferment.tk/create
+const template = `# Created With Barrell Tool https://fermentpkg.tech/create
 from index import Barrells
 class {{name}}(Barrells):
     def __init__(self):
