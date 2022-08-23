@@ -8,58 +8,123 @@
 
 
 <url>
-  <loc>https://www.ferment.tk/</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/autoconf</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/create</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/autoconf</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/automake</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/automake</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/bitGit</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/bat</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/cmake</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/bitgit</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/go</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/cmake</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/libzip</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/glib</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/pkgconfig</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/go</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/smartmontools</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/htop</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.ferment.tk/barrells/task</loc>
-  <lastmod>2022-05-09T11:25:43+00:00</lastmod>
+  <loc>https://www.fermentpkg.tech/barrells/libzip</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/ncurses</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/ninja</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/oniguruma</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/pkgconfig</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/pv</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/pyenv</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/qemu</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/rust</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/sdl2</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/smartmontools</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/task</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fermentpkg.tech/barrells/tldr</loc>
+  <lastmod>2022-08-23T11:16:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
